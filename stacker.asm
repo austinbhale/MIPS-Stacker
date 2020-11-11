@@ -18,7 +18,7 @@ a:	.word 3
 main:
 	lui 	$sp, 0x1001		# Initialize stack pointer to the 64th location above start of data
 	ori 	$sp, $sp, 0x1000	# top of the stack is the word at address [0x10010ffc - 0x10010fff]
-	addi $fp, $sp, -4 # Set $fp to the start of main's stack frame
+	addi $fp, $sp, -4 		# Set $fp to the start of main's stack frame
 	
 	###############################################
 	# ANIMATE character on screen                 #
